@@ -1,11 +1,222 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Shiv Shankar | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiv Shankar | Digital Journalist</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero span {
+  color: #c00000;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 2px solid #111;
+  margin-right: 10px;
+  font-weight: 600;
+  color: #111;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #111;
+  color: #fff;
+}
+
+.card {
+  border-left: 4px solid #c00000;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #f2f2f2;
+  padding: 8px 14px;
+  margin: 8px 8px 0 0;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #eee;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #c00000;
+}
+
+footer {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+</style>
 </head>
+
 <body>
-  <h1>Shiv Shankar</h1>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Shiv <span>Shankar</span></h1>
   <p>Digital Journalist & Social Media News Producer</p>
-  <p>This is my portfolio website.</p>
+  <p>Short-form, mobile-first storytelling for youth platforms</p>
+
+  <div class="buttons">
+    <a href="#work">View My Work</a>
+    <a href="#">Download Resume</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a digital journalist and social media professional with 1+ year of experience creating
+    fast-paced, visually engaging news content for digital platforms. My work focuses on short-form
+    storytelling, trend-based journalism, and youth-centric news coverage. I have worked closely
+    with editors and newsroom teams to deliver accurate stories under tight deadlines.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills & Platforms</h2>
+
+  <div class="skills">
+    <span>Short-form Journalism</span>
+    <span>Scriptwriting</span>
+    <span>Headline Writing</span>
+    <span>Breaking News</span>
+    <span>Fact-checking</span>
+    <span>Investigative Research</span>
+    <span>Instagram Reels</span>
+    <span>YouTube Shorts</span>
+    <span>Snapchat-style Content</span>
+    <span>Canva</span>
+    <span>Google Analytics</span>
+    <span>Hootsuite</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>BNN Breaking — Social Media Manager</h3>
+    <p>Apr 2023 – Sep 2023</p>
+    <p>Created fast-paced digital news content, covered breaking stories, and coordinated with editors.</p>
+  </div>
+
+  <div class="card">
+    <h3>Freelance Content Creator — International Client</h3>
+    <p>Oct 2023 – Jan 2024</p>
+    <p>Produced global-facing social media content with quick turnaround timelines.</p>
+  </div>
+
+  <div class="card">
+    <h3>The Probe — Journalism Intern</h3>
+    <p>Jan 2024 – Apr 2024</p>
+    <p>Assisted in investigative research, interviews, and scripting.</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="work">
+  <h2>Selected Work</h2>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>Galaxy Mall Accident</h3>
+      <p>Coverage highlighting alleged negligence and accountability.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Institutionalised Medical Negligence</h3>
+      <p>Investigative storytelling on systemic healthcare failures.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section>
+  <h2>Achievements</h2>
+  <p>• Managed multiple social media accounts with measurable engagement growth</p>
+  <p>• Produced international-level digital content</p>
+  <p>• Contributed to investigative journalism projects</p>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact</h2>
+  <p>📧 shivshanksrivas@gmail.com</p>
+  <p>🔗 LinkedIn: linkedin.com/in/shiv-shankar-682a0316b</p>
+  <p>📍 Varanasi, India | Open to Noida (Hybrid)</p>
+</section>
+
+<footer>
+  © 2026 Shiv Shankar — Digital Journalism Portfolio
+</footer>
+
 </body>
 </html>
