@@ -1,144 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shiv Shankar | Digital Journalist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiv Shankar | Digital Journalist</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-    html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
 
-    body {
-      background: #ffffff;
-      color: #111;
-      line-height: 1.6;
-    }
+body {
+  background: #0e0e0e;
+  color: #ffffff;
+}
 
-    /* NAVBAR */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #fff;
-      border-bottom: 1px solid #eee;
-      z-index: 1000;
-    }
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(14,14,14,0.95);
+  border-bottom: 1px solid #222;
+  z-index: 1000;
+}
 
-    nav ul {
-      max-width: 1100px;
-      margin: auto;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-    }
+nav ul {
+  max-width: 1100px;
+  margin: auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
 
-    nav a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 600;
-    }
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
 
-    /* SECTIONS */
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 110px 20px;
-    }
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 120px 20px;
+}
 
-    h1 { font-size: 52px; }
-    h2 { font-size: 32px; margin-bottom: 20px; }
-    p  { font-size: 18px; color: #444; }
+h1 {
+  font-size: 56px;
+}
 
-    .accent { color: #c00000; }
+h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+}
 
-    /* HERO */
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+p {
+  font-size: 18px;
+  color: #cfcfcf;
+}
 
-    .buttons {
-      margin-top: 30px;
-    }
+.accent {
+  color: #ff4d4d;
+}
 
-    .buttons a {
-      text-decoration: none;
-      padding: 12px 26px;
-      border: 2px solid #111;
-      margin-right: 10px;
-      font-weight: 600;
-      color: #111;
-      transition: 0.3s;
-    }
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-    .buttons a:hover {
-      background: #111;
-      color: #fff;
-    }
+.buttons {
+  margin-top: 35px;
+}
 
-    /* SKILLS */
-    .skills span {
-      display: inline-block;
-      background: #f2f2f2;
-      padding: 8px 14px;
-      margin: 8px 8px 0 0;
-      border-radius: 20px;
-      font-size: 14px;
-    }
+.buttons a {
+  text-decoration: none;
+  padding: 14px 28px;
+  border: 2px solid #fff;
+  margin-right: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
+}
 
-    /* CARDS */
-    .card {
-      border-left: 4px solid #c00000;
-      padding-left: 20px;
-      margin-bottom: 30px;
-    }
+.buttons a:hover {
+  background: #fff;
+  color: #000;
+}
 
-    /* PROJECTS */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #1e1e1e;
+  padding: 10px 16px;
+  margin: 8px 8px 0 0;
+  border-radius: 25px;
+  font-size: 14px;
+}
 
-    .project-card {
-      border: 1px solid #eee;
-      padding: 20px;
-      transition: 0.3s;
-    }
+/* EXPERIENCE */
+.card {
+  border-left: 4px solid #ff4d4d;
+  padding-left: 20px;
+  margin-bottom: 35px;
+}
 
-    .project-card:hover {
-      transform: translateY(-5px);
-      border-color: #c00000;
-    }
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
 
-    .project-card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #c00000;
-      font-weight: 600;
-      text-decoration: none;
-    }
+.project-card {
+  background: #141414;
+  border: 1px solid #222;
+  padding: 25px;
+  transition: 0.3s;
+}
 
-    /* FOOTER */
-    footer {
-      background: #f9f9f9;
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-    }
-  </style>
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff4d4d;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #ff4d4d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #0a0a0a;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+</style>
 </head>
 
 <body>
@@ -161,7 +174,7 @@
   <p>Short-form, mobile-first storytelling for youth platforms</p>
 
   <div class="buttons">
-    <a href="#work">View My Work</a>
+    <a href="#work">View Work</a>
     <a href="Shiv-Shankar-Resume.pdf" target="_blank">Download Resume</a>
   </div>
 </section>
@@ -172,23 +185,21 @@
   <p>
     I am a digital journalist and media professional with 1+ year of experience in
     digital journalism, social media content, and platform-native storytelling.
-    My work focuses on short-form news, investigative reporting, and youth-centric
-    digital formats. I have worked closely with editors and newsroom teams to
-    deliver accurate, engaging stories under tight deadlines.
+    I specialize in short-form news, investigative reporting, and youth-centric
+    digital formats, working closely with editors under tight deadlines.
   </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
   <h2>Skills & Platforms</h2>
-
   <div class="skills">
     <span>Short-form Journalism</span>
     <span>Scriptwriting</span>
     <span>Headline Writing</span>
-    <span>Breaking News Coverage</span>
-    <span>Research & Fact-checking</span>
-    <span>Interviews</span>
+    <span>Breaking News</span>
+    <span>Fact-checking</span>
+    <span>Investigative Research</span>
     <span>Instagram Reels</span>
     <span>YouTube Shorts</span>
     <span>Snapchat-style Content</span>
@@ -205,27 +216,19 @@
   <div class="card">
     <h3>BNN Breaking — Social Media Manager</h3>
     <p>Apr 2023 – Sep 2023</p>
-    <p>
-      Produced platform-specific news content, covered breaking stories,
-      and coordinated with editors to ensure accuracy and speed.
-    </p>
+    <p>Produced fast-paced digital news content and covered breaking stories.</p>
   </div>
 
   <div class="card">
     <h3>Freelance Content Creator — International Client</h3>
     <p>Oct 2023 – Jan 2024</p>
-    <p>
-      Created audience-focused digital content for global platforms with
-      fast turnaround timelines.
-    </p>
+    <p>Created audience-focused content for global social media platforms.</p>
   </div>
 
   <div class="card">
     <h3>The Probe — Journalism Intern</h3>
     <p>Jan 2024 – Apr 2024</p>
-    <p>
-      Assisted in investigative reporting, research, scripting, and interviews.
-    </p>
+    <p>Assisted in investigative reporting, research, and interviews.</p>
   </div>
 </section>
 
@@ -236,41 +239,32 @@
   <div class="projects">
 
     <div class="project-card">
-      <h3>Galaxy Mall Accident: Victims’ Families Cry Foul Over Negligence</h3>
-      <p>
-        Public-interest reporting highlighting alleged negligence and the voices
-        of affected families.
-      </p>
+      <h3>Galaxy Mall Accident</h3>
+      <p>Public-interest reporting on alleged negligence.</p>
       <a href="https://theprobe.in/public-interest/galaxy-mall-accident-victims-families-cry-foul-over-negligence-4584152" target="_blank">
         Read Article →
       </a>
     </div>
 
     <div class="project-card">
-      <h3>The Alarming Reality of Institutionalised Medical Negligence</h3>
-      <p>
-        Investigative reporting examining systemic failures in healthcare institutions.
-      </p>
+      <h3>Institutionalised Medical Negligence</h3>
+      <p>Investigative reporting on systemic healthcare failures.</p>
       <a href="https://theprobe.in/medical-negligence/the-alarming-reality-of-institutionalised-medical-negligence-4525625" target="_blank">
         Read Article →
       </a>
     </div>
 
     <div class="project-card">
-      <h3>Video Journalism – Digital Explainer</h3>
-      <p>
-        Short-form video journalism created for digital and social media platforms.
-      </p>
+      <h3>Video Journalism</h3>
+      <p>Short-form digital explainer video.</p>
       <a href="https://www.youtube.com/watch?v=e4lfjG6UrEY" target="_blank">
         Watch Video →
       </a>
     </div>
 
     <div class="project-card">
-      <h3>Video Journalism – Platform-native Story</h3>
-      <p>
-        Platform-specific video storytelling designed for youth audiences.
-      </p>
+      <h3>Platform-native Video Story</h3>
+      <p>Youth-focused storytelling for social platforms.</p>
       <a href="https://www.youtube.com/watch?v=Sq-B8xEOUj4" target="_blank">
         Watch Video →
       </a>
@@ -283,8 +277,8 @@
 <section id="contact">
   <h2>Contact</h2>
   <p>📧 shivshanksrivas@gmail.com</p>
-  <p>🔗 LinkedIn: linkedin.com/in/shiv-shankar-682a0316b</p>
-  <p>📍 Varanasi, India | Open to Noida / Gurgaon (Hybrid)</p>
+  <p>🔗 linkedin.com/in/shiv-shankar-682a0316b</p>
+  <p>📍 Varanasi | Open to Noida / Gurgaon</p>
 </section>
 
 <footer>
